@@ -1,5 +1,5 @@
 <template>
-  <b-container fluid="md">
+  <div class="container">
     <div class="navbar">
       <b-nav>
         <h3>
@@ -8,16 +8,16 @@
             <div>WEB</div></b
           >
         </h3>
-        <b-nav-item active>Home</b-nav-item>
+        <b-nav-item>Home</b-nav-item>
         <b-nav-item>Our Service</b-nav-item>
         <b-nav-item>Our Client</b-nav-item>
         <b-nav-item>Team</b-nav-item>
         <b-nav-item>Contact Us</b-nav-item>
       </b-nav>
       <div class="btn-call-us-now">
-        <b-button variant="btn-call-us-now outline-primary"
-          >Call Us Now</b-button
-        >
+        <button type="button" class="btn-call-us-now btn-outline-primary">
+          Call Us Now
+        </button>
       </div>
       <div class="gambarpojok">
         <img
@@ -34,9 +34,9 @@
         <p>Selamat Datang di RAXEL WEB</p>
         <p>This is my Portofolio Web :)</p>
 
-        <b-button variant="primary" class="btn-start btn-lg"
-          >Start Your Project</b-button
-        >
+        <button type="button" class="btn-start btn-outline-light btn-lg">
+          Start Your Project
+        </button>
         <b-button variant="light" class="btn-learn btn-outline-dark btn-lg"
           >Learn More</b-button
         >
@@ -57,50 +57,69 @@
         />
       </div>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <b-card
-          title="Website & Mobile App Design"
-          img-src="https://i.ibb.co/B4HynHQ/ourservice1.png"
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 30rem"
-        >
-          <b-card-text>
-            Our team work with you to develop a user experience that engages
-            your audience, promotes your brand and gets results.
+        <div class="col">
+          <div class="card h-100">
+            <center>
+              <img
+                src="./assets/ourservice1.png"
+                style="width: 250px; height: 180px"
+              />
+            </center>
+            <div class="card-body">
+              <h5 class="card-title"><b>Website & Mobile App Design</b></h5>
+              <p class="card-text">
+                Our team work with you to develop a user experience that engages
+                your audience, promotes your brand and gets results.
+              </p>
+              <button type="button" class="btn-our-service btn-outline-light">
+                Explore More
+              </button>
+            </div>
+          </div>
+        </div>
 
-            <b-button variant="primary" class="btn-start"
-              >Explore More</b-button
-            >
-          </b-card-text>
-        </b-card>
-        <b-card
-          title="Blog & Artikel"
-          img-src="https://i.ibb.co/y44qxmp/ourservice2.png"
-          img-alt="Images"
-          img-top
-          tag="article"
-          style="max-width: 30rem"
-        >
-          <b-card-text>
-            Provide reading articles or blogs about the website.
-          </b-card-text>
-          <b-button variant="primary" class="btn-start">Explore More</b-button>
-        </b-card>
-        <b-card
-          title="Web Analystic Audit"
-          img-src="https://i.ibb.co/4VKx0QB/ourservice3.png"
-          img-alt="Image"
-          img-top
-          tag="article"
-          style="max-width: 30rem"
-        >
-          <b-card-text>
-            Detailed understanding of your web analytics are the essential keys
-            to driving intelligent decisions for your brand.
-          </b-card-text>
-          <b-button variant="primary" class="btn-start">Explore More</b-button>
-        </b-card>
+        <div class="col">
+          <div class="card h-100">
+            <center>
+              <img
+                src="./assets/ourservice2.png"
+                style="width: 250px; height: 160px"
+              />
+            </center>
+            <div class="card-body">
+              <h5 class="card-title">
+                <b>Blog & Artikel</b>
+              </h5>
+              <p class="card-text">
+                Provide reading articles or blogs about the website.
+              </p>
+              <button type="button" class="btn-our-service btn-outline-light">
+                Explore More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100">
+            <center>
+              <img
+                src="./assets/ourservice3.png"
+                style="width: 250px; height: 180px"
+              />
+            </center>
+            <div class="card-body">
+              <h5 class="card-title"><b>Web Analytics Audit</b></h5>
+              <p class="card-text">
+                Detailed understanding of your web analytics are the essential
+                keys to driving intelligent decisions for your brand.
+              </p>
+              <button type="button" class="btn-our-service btn-outline-light">
+                Explore More
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="ourclient">
@@ -165,73 +184,89 @@
           style="width: 350px; height: 350px"
         />
       </div>
-      <b-button variant="primary" class="btn-our-client"
-        >Lets Work Together</b-button
-      >
+      <button type="button" class="btn-our-client btn-outline-light btn-lg">
+        Lets Work Together
+      </button>
     </div>
     <div class="meet">
       <p class="lead1 text-center"></p>
       <center>
         <h1><b>Meet Our Team</b></h1>
+        <div class="card-meet" style="width: 180px; height: 150px">
+          <img src="./assets/Profile1.jpeg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Moch Renaldy Syaputra</h5>
+            <p class="card-text">Desaigner</p>
+          </div>
+        </div>
       </center>
     </div>
-    <center>
-      <div class="card-meet">
-        <b-card
-          title="Moch Renaldy S"
-          img-src="https://i.ibb.co/RhhWp2S/Profile1.jpg"
-          img-alt="Image"
-          img-top
-          tag="article"
-          img-height="300px"
-          style="max-width: 20rem"
-          class="mb-2"
-        >
-          <b-card-text> Desaign </b-card-text>
-        </b-card>
-      </div>
-    </center>
+
     <div class="form">
-      <center>
-        <h1>Get In Touch</h1>
-        <p>Contact Us :)</p>
-        <b-form inline>
-          <b-form-input
-            id="inline-form-input-name"
-            class="mb-2 mr-sm-2 mb-sm-0"
-            placeholder="Your Name"
-          ></b-form-input>
-
-          >
-          <b-input-group prepend="@" class="mb-2 mr-sm-2 mb-sm-0">
-            <b-form-input
-              id="inline-form-input-username"
-              placeholder="Your Email"
-            ></b-form-input>
-          </b-input-group>
-
-          <b-form-input
-            id="inline-form-input-name"
-            class="mb-2 mr-sm-2 mb-sm-0"
-            placeholder="Message"
-          ></b-form-input>
-
-          <b-button variant="primary" class="btn-start">Send Message</b-button>
-        </b-form>
-      </center>
-    </div>
-    <center>
-      <div class="footer2">
-        <b-button block>2022 - Moch Renaldy Syaputra</b-button>
+      <div class="judul-form">
+        <h1>
+          <b><center>Get In Touch</center></b>
+        </h1>
+        <p><center>Contact Us :)</center></p>
+        <form>
+          <div class="gambarpojok3">
+            <img
+              src="./assets/GambarPojok2.png"
+              style="width: 300px; height: 360px"
+            />
+          </div>
+          <div class="form-row">
+            <div class="col">
+              <center>
+                <input type="text" class="username" placeholder="Your Name" />
+              </center>
+            </div>
+            <div class="col">
+              <center>
+                <input type="text" class="email" placeholder="Your Email" />
+              </center>
+            </div>
+          </div>
+          <div class="col">
+            <center>
+              <input type="text" class="Message" placeholder="Message" />
+            </center>
+            <a class="btn-form btn-outline-light btn-lg" href="#" role="button"
+              >Send Message</a
+            >
+          </div>
+        </form>
       </div>
-    </center>
-  </b-container>
+    </div>
+    <div class="footer">
+      <h2 class="mt-5">
+        <b
+          >RAXEL <br />
+          WEB</b
+        >
+
+        <h6 class="mt-3">
+          Smart Move to build your brand and engage <br />more customer
+        </h6>
+      </h2>
+      <h6 class="teks2"><b>Company</b></h6>
+      <h6 class="teks2">Add: 123 xxx - xxx - xxx</h6>
+      <h6 class="teks3">Tel: 0821 3259 6643</h6>
+      <h6 class="teks4">Email: renaldy.syaputra2103@gmail.com</h6>
+    </div>
+    <v-btn class="btn-footer" x-large color="dark" block elevation="4">
+      2022 - Moch Renaldy Syaputra</v-btn
+    >
+  </div>
 </template>
 
 <script>
 </script>
 
 <style>
+.navbar {
+  color: #000;
+}
 .nav-item {
   font-size: 16px;
   margin-left: 40px;
@@ -240,6 +275,7 @@
 }
 .btn-call-us-now {
   background-color: white;
+  color: black;
   z-index: 1;
   border-radius: 5px;
   padding-right: 35px;
@@ -267,8 +303,8 @@
 
 .btn-start {
   background-color: #744fc6;
+  color: white;
   font-family: sans-serif;
-  border-radius: 12px;
   margin-top: 30px;
 }
 .btn-learn {
@@ -276,13 +312,18 @@
   font-family: sans-serif;
   border-radius: 12px;
   margin-left: 20px;
-  margin-top: 30px;
+  margin-top: -5px;
 }
 .our-service {
   background-color: #f5f5f5;
   margin-top: 150px;
   border-radius: 16px;
   padding-bottom: 40px;
+}
+.btn-our-service {
+  background-color: #744fc6;
+  border-radius: 5px;
+  padding: 10px 10px 10px 10px;
 }
 .lead {
   font-family: sans-serif;
@@ -349,9 +390,8 @@
   margin-top: 300px;
 }
 .meet {
-  margin-top: 120px;
-  background: url(https://i.ibb.co/JKPqvpg/background-meet.jpg);
-  position: relative;
+  margin-top: 200px;
+  background: url(https://i.ibb.co/8dFTtF0/Background.png);
 }
 .lead1 {
   font-family: sans-serif;
@@ -360,14 +400,110 @@
 }
 
 .card-meet {
-  margin-top: 20px;
+  border-radius: 20px;
+  text-align: center;
+  color: black;
+  border: 10px solid rgb(245, 245, 245);
+  background-color: rgb(255, 255, 255);
+  padding-top: 10px;
+  box-shadow: 1px 1px solid grey;
 }
+
+.card-text {
+  color: grey;
+  border-radius: 10px;
+}
+
 .form {
   background-color: #f3f3f3;
   font-family: "Times New Roman", Times, serif;
-  margin-top: 80px;
+  margin-top: 300px;
+  border-radius: 10px;
 }
-.footer2 {
+
+.email {
+  font-size: 20px;
+  padding-left: 50px;
+  padding-right: 10px;
+  margin-right: -350px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.username {
+  font-size: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-left: -330px;
+  position: absolute;
+}
+
+.Message {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 400px;
+  padding-top: 5px;
+  padding-bottom: 100px;
   margin-top: 20px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.btn-form {
+  background-color: #744fc6;
+  font-family: sans-serif;
+  border-radius: 8px;
+  font-family: Nunito Sans;
+  padding-right: 60px;
+  padding-left: 60px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 18px;
+  margin-left: 480px;
+}
+
+.gambarpojok3 {
+  margin-left: -120px;
+  margin-top: -100px;
+  opacity: 100%;
+  position: absolute;
+}
+
+.teks2 {
+  position: relative;
+  font-size: 16px;
+  top: -140px;
+  left: 450px;
+}
+
+.teks3 {
+  position: relative;
+  font-size: 16px;
+  top: -130px;
+  left: 450px;
+}
+
+.teks4 {
+  position: relative;
+  font-size: 16px;
+  top: -120px;
+  left: 450px;
+}
+
+.btn-footer {
+  margin-top: -50px;
 }
 </style>
