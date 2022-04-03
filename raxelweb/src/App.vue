@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <!-- Navbar -->
     <div class="navbar">
       <b-nav>
         <h3>
@@ -19,6 +20,8 @@
           Call Us Now
         </button>
       </div>
+      <!-- Navbar End -->
+      <!-- Home -->
       <div class="gambarpojok">
         <img
           class="logo"
@@ -42,6 +45,9 @@
         >
       </b-jumbotron>
     </div>
+    <!-- Home End -->
+
+    <!-- OurService -->
     <div class="our-service text-center">
       <p class="lead"></p>
       <h1>Our services</h1>
@@ -122,6 +128,9 @@
         </div>
       </div>
     </div>
+    <!-- OurService End -->
+
+    <!-- OurClient -->
     <div class="ourclient">
       <h1 class="judul"><b>Our Client</b></h1>
       <div class="logo1">
@@ -188,6 +197,9 @@
         Lets Work Together
       </button>
     </div>
+    <!-- OurClient End -->
+
+    <!-- MeetCard -->
     <div class="meet">
       <p class="lead1 text-center"></p>
       <center>
@@ -201,7 +213,9 @@
         </div>
       </center>
     </div>
+    <!-- MeetCard End -->
 
+    <!-- Form -->
     <div class="form">
       <div class="judul-form">
         <h1>
@@ -238,6 +252,9 @@
         </form>
       </div>
     </div>
+    <!-- Form End -->
+
+    <!-- Footer -->
     <div class="footer">
       <h2 class="mt-5">
         <b
@@ -258,6 +275,7 @@
       2022 - Moch Renaldy Syaputra</v-btn
     >
   </div>
+  <!-- Footer End -->
 </template>
 
 <script>
